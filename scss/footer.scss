@@ -1,0 +1,47 @@
+footer {
+  width: 1280px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  .logo {
+    width: 75px;
+    height: 60px;
+    color: white;
+    background-image: url(../images/logo/logo-white.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .copyright {
+    color: white;
+    font-family: Gill-Sans;
+    font-size: 12px;
+  }
+  .social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .facebook {
+      width: 22.96px;
+      height: 22.96px;
+      background-color: green;
+      margin-right: 21px;
+    }
+    .instagram {
+      width: 22.96px;
+      height: 22.96px;
+      background-color: yellow;
+      margin-right: 21px;
+    }
+    .twitter {
+      width: 22.96px;
+      height: 22.96px;
+      background-color: red;
+    }
+  }
+}

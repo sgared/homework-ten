@@ -1,0 +1,210 @@
+.home {
+  width: 100%;
+  min-height: 800px;
+
+  .hero {
+    width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.25),
+        rgba(1, 1, 1, 0.5)
+      ),
+      url(../../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+
+    .center-note {
+      width: 714px;
+      max-height: 50px;
+      margin: 0 auto;
+      //border: solid 1px red;
+    }
+    .travel-fly {
+      text-align: center;
+      color: white;
+      font-size: 60px;
+      font-family: Proxima-Nova-extra-condensed;
+      margin-bottom: 30px;
+    }
+    .intro-paragraph {
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-family: Proxima-Nova-extra-condensed;
+    }
+    .read-more {
+      background-color: #7acdfe;
+      padding: 10px 5px 5px 5px;
+      color: white;
+      font-size: 15px;
+      width: 121px;
+      height: 40px;
+      text-align: center;
+      margin: 30px auto 0 auto;
+    }
+  }
+  .promo-holder {
+    width: 1280px;
+    height: 304px;
+    margin: 0 auto;
+    .promo-trips {
+      width: 873px;
+      height: 304px;
+      display: flex;
+      justify-content: space-between;
+      margin: -74px auto 0 auto;
+      // border: dotted 1px brown;
+      .isreal {
+        width: 236px;
+        height: 304px;
+        background-image: url(.././images/tour-01.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .usa {
+        width: 236px;
+        height: 304px;
+        background-image: url(.././images/tour-02.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      .austrailia {
+        width: 236px;
+        height: 304px;
+        background-image: url(.././images/tour-03.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .promos {
+        width: 236px;
+        height: 304px;
+        color: white;
+        background-color: lightblue;
+
+        .title {
+          margin-top: 20px;
+          text-align: center;
+          color: white;
+          font-size: 35px;
+          font-family: Proxima-Nova-thin;
+        }
+        .price {
+          text-align: center;
+          font-size: 30px;
+          font-family: Proxima-Nova-extra-condensed;
+        }
+        .learn-more {
+          font-size: 15px;
+          font-family: Gill-Sans;
+          text-align: center;
+          margin: 50px;
+          padding: 5px;
+          background-color: #7acdfe;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .booking {
+    min-height: 400px;
+    padding: 50px;
+    .booking-wrapper {
+      max-width: 818px;
+      margin: 0 auto;
+      h1 {
+        font-size: 60px;
+        text-align: left;
+        font-weight: normal;
+        font-family: Proxima-Nova-extra-condensed;
+      }
+
+      .first-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        input {
+          width: 48%;
+          height: 58px;
+          border: solid 1px #7acdfe;
+        }
+      }
+      .second-two {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        input {
+          width: 48%;
+          height: 58px;
+          border: solid 1px #7acdfe;
+        }
+      }
+      .check-in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        label {
+          font-size: 16px;
+        }
+        input {
+          width: 88%;
+          height: 58px;
+          border: solid 1px #7acdfe;
+        }
+      }
+      .check-out {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        label {
+          font-size: 16px;
+        }
+        input {
+          width: 88%;
+          height: 58px;
+          border: solid 1px #7acdfe;
+        }
+      }
+      .people-amount {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        input {
+          width: 16.6%;
+          height: 58px;
+          border: solid 1px #7acdfe;
+        }
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin: 10px auto;
+      border: solid 1px #7acdfe;
+    }
+    .booking-submit {
+      color: white;
+      text-align: center;
+      width: 100%;
+      background-color: #79addc;
+      padding: 10px;
+      border-radius: 20px;
+      border: none;
+    }
+  }
+}

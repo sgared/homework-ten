@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p {
+  margin-bottom: 16px;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+}
+@font-face {
+  font-family: Proxima-Nova-thin;
+  src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: Proxima-Nova-extra-condensed;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: PTSerif-Bold;
+  src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTSerif-BoldItalic;
+  src: url(../css/fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: PTSerif-Italic;
+  src: url(../css/fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: PTSerif-Regular;
+  src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+nav {
+  position: fixed;
+  width: 980px;
+  height: 92.5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: solid 2px white;
+}
+nav .logo {
+  width: 136px;
+  height: 42px;
+  color: white;
+  background-image: url(../images/logo/logo-white.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav .links {
+  height: 42px;
+  width: 430px;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  font-family: GillSans;
+  font-size: 15px;
+}
+nav .links a span {
+  margin-left: 10px;
+}
+
+footer {
+  width: 1280px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #79addc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 150px;
+}
+footer .logo {
+  width: 75px;
+  height: 60px;
+  color: white;
+  background-image: url(../images/logo/logo-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .copyright {
+  color: white;
+  font-family: Gill-Sans;
+  font-size: 12px;
+}
+footer .social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .social-medias .facebook {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: green;
+  margin-right: 21px;
+}
+footer .social-medias .instagram {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: yellow;
+  margin-right: 21px;
+}
+footer .social-medias .twitter {
+  width: 22.96px;
+  height: 22.96px;
+  background-color: red;
+}
+
+.home {
+  width: 100%;
+  min-height: 800px;
+}
+.home .hero {
+  width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.25)), to(rgba(1, 1, 1, 0.5))), url(../../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25), rgba(1, 1, 1, 0.5)), url(../../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.home .hero .center-note {
+  width: 714px;
+  max-height: 50px;
+  margin: 0 auto;
+}
+.home .hero .travel-fly {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: Proxima-Nova-extra-condensed;
+  margin-bottom: 30px;
+}
+.home .hero .intro-paragraph {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .hero .read-more {
+  background-color: #7acdfe;
+  padding: 10px 5px 5px 5px;
+  color: white;
+  font-size: 15px;
+  width: 121px;
+  height: 40px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+}
+.home .promo-holder {
+  width: 1280px;
+  height: 304px;
+  margin: 0 auto;
+}
+.home .promo-holder .promo-trips {
+  width: 873px;
+  height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: -74px auto 0 auto;
+}
+.home .promo-holder .promo-trips .isreal {
+  width: 236px;
+  height: 304px;
+  background-image: url(.././images/tour-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .usa {
+  width: 236px;
+  height: 304px;
+  background-image: url(.././images/tour-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .austrailia {
+  width: 236px;
+  height: 304px;
+  background-image: url(.././images/tour-03.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.home .promo-holder .promo-trips .promos {
+  width: 236px;
+  height: 304px;
+  color: white;
+  background-color: lightblue;
+}
+.home .promo-holder .promo-trips .promos .title {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-family: Proxima-Nova-thin;
+}
+.home .promo-holder .promo-trips .promos .price {
+  text-align: center;
+  font-size: 30px;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .promo-holder .promo-trips .promos .learn-more {
+  font-size: 15px;
+  font-family: Gill-Sans;
+  text-align: center;
+  margin: 50px;
+  padding: 5px;
+  background-color: #7acdfe;
+  border-radius: 15px;
+}
+.home .booking {
+  min-height: 400px;
+  padding: 50px;
+}
+.home .booking .booking-wrapper {
+  max-width: 818px;
+  margin: 0 auto;
+}
+.home .booking .booking-wrapper h1 {
+  font-size: 60px;
+  text-align: left;
+  font-weight: normal;
+  font-family: Proxima-Nova-extra-condensed;
+}
+.home .booking .booking-wrapper .first-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .booking .booking-wrapper .first-two input {
+  width: 48%;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+.home .booking .booking-wrapper .second-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .booking .booking-wrapper .second-two input {
+  width: 48%;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+.home .booking .booking-wrapper .check-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .booking .booking-wrapper .check-in label {
+  font-size: 16px;
+}
+.home .booking .booking-wrapper .check-in input {
+  width: 88%;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+.home .booking .booking-wrapper .check-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.home .booking .booking-wrapper .check-out label {
+  font-size: 16px;
+}
+.home .booking .booking-wrapper .check-out input {
+  width: 88%;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+.home .booking .booking-wrapper .people-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper .people-amount input {
+  width: 16.6%;
+  height: 58px;
+  border: solid 1px #7acdfe;
+}
+.home .booking textarea {
+  width: 100%;
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px auto;
+  border: solid 1px #7acdfe;
+}
+.home .booking .booking-submit {
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-color: #79addc;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.about-wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+.about-wrapper .title_h1 {
+  margin: 0 896px 2px 150px;
+  font-size: 60px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.about-wrapper .underline-about {
+  width: 171px;
+  color: black;
+  height: 2px;
+  margin: 0 896px 2px 150px;
+}
+.about-wrapper .title_h2 {
+  font-size: 40px;
+  margin: 0 785px 0 150px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+.about-wrapper .underline-quotes {
+  width: 255px;
+  color: black;
+  height: 2px;
+  margin: 0 785px 0 150px;
+}
+.about-wrapper .intro_p {
+  margin: 36px 149px 95px 151px;
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+.about-wrapper .about-person {
+  position: relative;
+  width: 722px;
+  min-height: 150px;
+  margin: 40px 408px 40px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-wrapper .about-person .person-picture {
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+}
+.about-wrapper .about-person .one {
+  background-image: url(../images/about-client-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-wrapper .about-person .two {
+  background-image: url(../images/about-client-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-wrapper .about-person .quote {
+  width: 385px;
+  height: 102px;
+}
+.about-wrapper .about-person .quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+.about-wrapper .about-person .author {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 176px;
+  height: 27px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  font-style: thin;
+  font-size: 20px;
+  color: #79addc;
+}
+
+.title_h1 {
+  margin: 0 896px 2px 150px;
+  font-size: 60px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+
+.underline-about {
+  width: 171px;
+  color: black;
+  height: 2px;
+  margin: 0 896px 2px 150px;
+}
+
+.title_h2 {
+  font-size: 40px;
+  margin: 0 785px 0 150px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+}
+
+.underline-quotes {
+  width: 255px;
+  color: black;
+  height: 2px;
+  margin: 0 785px 0 150px;
+}
+
+.intro_p {
+  margin: 36px 149px 95px 151px;
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+
+.about-person {
+  position: relative;
+  width: 722px;
+  min-height: 150px;
+  margin: 40px 408px 40px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-person .person-picture {
+  width: 260px;
+  height: 150px;
+  margin-right: 21px;
+}
+.about-person .one {
+  background-image: url(../images/about-client-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-person .two {
+  background-image: url(../images/about-client-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-person .quote {
+  width: 385px;
+  height: 102px;
+}
+.about-person .quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+}
+.about-person .author {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 176px;
+  height: 27px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  font-style: thin;
+  font-size: 20px;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 700px) {
+  .about-person {
+    display: block;
+    position: relative;
+    margin: 10px 10px;
+  }
+  .about-person .person-picture {
+    margin-bottom: 15px;
+  }
+  .about-person .quote {
+    margin-bottom: 15px;
+  }
+  .about-person .author {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .title_h1 {
+    margin: 15px 2px;
+    border: none;
+  }
+
+  .title_h2 {
+    margin: 15px 2px;
+    border: none;
+  }
+
+  .intro_p {
+    margin: 15px 5px;
+  }
+}
+.header {
+  width: 1280px;
+  height: 35px;
+  margin: 55px auto 40px auto;
+}
+.header h1 {
+  margin-left: 150px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.special-offer {
+  position: relative;
+  width: 980px;
+  height: 150px;
+  margin: 40px 150px 60px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.special-offer .place-picture {
+  width: 199px;
+  height: 287px;
+  margin-right: 21px;
+}
+.special-offer .first {
+  background-image: url(../images/special-offer-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.special-offer .second {
+  background-image: url(../images/special-offer-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.special-offer .quote {
+  width: 430px;
+  height: 221px;
+}
+.special-offer .quote h2 {
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+.special-offer .quote h2 span {
+  font-size: 20px;
+  color: #ff7d38;
+}
+.special-offer .quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.special-offer .learn-more {
+  position: absolute;
+  left: 226px;
+  bottom: 0;
+  width: 176px;
+  height: 27px;
+  font-family: ProximaNovaScOsfExtraCondensed;
+  font-style: thin;
+  font-size: 20px;
+  background-color: #79addc;
+  color: white;
+}
+
+.blog-holder {
+  width: 980px;
+  margin: 0 auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-bottom: 15px;
+}
+.blog-holder .calendar {
+  width: 60px;
+  height: 60px;
+  color: white;
+  background-color: #79addc;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 3px;
+  font-family: GillSans;
+}
+.blog-holder .blog-picture {
+  width: 900px;
+  height: 259px;
+  background-image: url(../images/blog.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blog-holder .imageAndquote {
+  display: block;
+  height: 370px;
+}
+.blog-holder .imageAndquote .blog-quote {
+  width: 400px;
+  height: 100px;
+}
+.blog-holder .imageAndquote .blog-quote h2 {
+  font-size: 30px;
+  margin: 11px auto 20px auto;
+}
+.blog-holder .imageAndquote .blog-quote p {
+  font-size: 16px;
+  font-family: GillSans;
+  font-weight: bold;
+  margin-bottom: 55px;
+  color: #79addc;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    width: 700px;
+    margin: 15px auto;
+  }
+  .header h1 {
+    margin-bottom: 5px;
+  }
+}

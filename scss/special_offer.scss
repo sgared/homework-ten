@@ -1,0 +1,121 @@
+.header {
+  width: 1280px;
+  height: 35px;
+  margin: 55px auto 40px auto;
+
+  h1 {
+    margin-left: 150px;
+    margin-bottom: 0;
+    text-decoration: underline;
+  }
+}
+.special-offer {
+  position: relative;
+  width: 980px;
+  height: 150px;
+  margin: 40px 150px 60px 150px;
+  display: flex;
+  .place-picture {
+    width: 199px;
+    height: 287px;
+    margin-right: 21px;
+  }
+  .first {
+    background-image: url(../images/special-offer-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .second {
+    background-image: url(../images/special-offer-02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .quote {
+    width: 430px;
+    height: 221px;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 28px;
+      span {
+        font-size: 20px;
+        color: #ff7d38;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-family: GillSans;
+      font-weight: bold;
+      margin-bottom: 55px;
+    }
+  }
+  .learn-more {
+    position: absolute;
+    left: 226px;
+    bottom: 0;
+    width: 176px;
+    height: 27px;
+    font-family: ProximaNovaScOsfExtraCondensed;
+    font-style: thin;
+    font-size: 20px;
+    background-color: #79addc;
+    color: white;
+  }
+}
+.blog-holder {
+  width: 980px;
+  margin: 0 auto 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 15px;
+  .calendar {
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #79addc;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 3px;
+    font-family: GillSans;
+  }
+  .blog-picture {
+    width: 900px;
+    height: 259px;
+    background-image: url(../images/blog.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .imageAndquote {
+    display: block;
+    height: 370px;
+    .blog-quote {
+      width: 400px;
+      height: 100px;
+      h2 {
+        font-size: 30px;
+        margin: 11px auto 20px auto;
+      }
+      p {
+        font-size: 16px;
+        font-family: GillSans;
+        font-weight: bold;
+        margin-bottom: 55px;
+        color: #79addc;
+      }
+    }
+  }
+}
+@media only screen and(max-width: 700px) {
+  .header {
+    width: 700px;
+    margin: 15px auto;
+
+    h1 {
+      margin-bottom: 5px;
+    }
+  }
+}
